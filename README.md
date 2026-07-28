@@ -2,7 +2,7 @@
 
 ## 📋 Sobre este repositório
 
-Este repositório documenta a estratégia metodológica robusta para extração e consolidação de dados em nível **nacional** sobre a **Política Nacional de Saúde Bucal (PNSB)** no âmbito do Sistema Único de Saúde (SUS), utilizando múltiplas bases de dados federais.
+Este repositório documenta a estratégia metodológica robusta para extração e consolidação de dados normativos em nível **nacional** sobre a **Política Nacional de Saúde Bucal (PNSB)** no âmbito do Sistema Único de Saúde (SUS), utilizando múltiplas bases de dados federais normativas.
 
 ## 🎯 Objetivos
 
@@ -21,7 +21,6 @@ Este repositório documenta a estratégia metodológica robusta para extração 
 ├── scripts/
 │   ├── extracao_dou.py          # Extração do DOU (Imprensa Nacional)
 │   ├── extracao_lexml.py        # Extração do LexML
-│   ├── extracao_datasus.py      # Extração do DATASUS
 │   └── consolidacao.py          # Consolidação das bases
 └── dados/
     └── .gitkeep                 # Diretório para dados extraídos
@@ -34,14 +33,13 @@ Este repositório documenta a estratégia metodológica robusta para extração 
 | Imprensa Nacional (DOU) | Normas federais | 2001+ | inlabs | ✅ Pública |
 | LexML Brasil | Legislação + Jurisprudência | Variável | OAI-PMH | ✅ Pública |
 | Base dos Dados (DOU) | DOU estruturado | 2019–2024 | BigQuery | ✅ Pública |
-| DATASUS / TABNET | Indicadores de saúde | 2000+ | API | ✅ Pública |
 | JusBrasil | DOU + Jurisprudência | Variável | Paga | ⚠️ Suplementar |
 
 ## 📊 Escopo
 
 - **Escala:** Nacional (Brasil)
 - **Período:** 2004–2026 (cobertura de governos Lula I/II, Dilma I/II, Temer, Bolsonaro, Lula III)
-- **Exclusões:** Normas estaduais e municipais
+- **Exclusões:** Normas estaduais e municipais; indicadores assistenciais
 - **Tipos documentais:** Leis, decretos, portarias, resoluções, normas operacionais
 
 ## 📄 Licença
